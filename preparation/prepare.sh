@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export TABLE_NAME="voting-app-restaurants"
+export TABLE_NAME="restaurants-voting-app"
 export IAM_ROLE="voting-app-role"
 export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query 'Account') 
 export AWS_REGION=$(aws configure get region)
