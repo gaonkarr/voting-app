@@ -11,7 +11,7 @@ The application puts and stores "votes" in an Amazon DynamoDB table - `restauran
 ```
 In addition to vote, you can query the status by CURLing (or similar) the `/api/getvotes` API. 
 
-If you hit the `/` path of the service a summary of the various APIs available is provided. This path only serves static content and does not test DynamoDB connectivity. 
+
 
 #### Variables
 
@@ -21,9 +21,13 @@ If you hit the `/` path of the service a summary of the various APIs available i
 
 #### Deploying the application with other services and platforms  
 
-The application comes with its `requirements.txt` file and SAM `template.yaml`. It also provides`prepare.sh` that can help you set the variables, create the DynamoDB table and add some sample votes.
-To deploy this application, run `sam build` and `sam deploy --guided`. Note the URL in output to access the application.
+- The application comes with its `requirements.txt` file for all the dependencies. 
 
+- It also provides`prepare.sh` that can help you set the variables, create the DynamoDB table and add some sample votes.
+
+- A SAM `template.yaml` is also provided alongwith a `samconfig.toml`. To deploy this application, run `sam build` and `sam deploy --guided`. Note the URL in output to access the application.
+
+- If you hit the `/` path of the service a summary of the various APIs available is provided. This path only serves static content and does not test DynamoDB connectivity. 
 
 #### Licensing
 
