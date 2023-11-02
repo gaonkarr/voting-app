@@ -1,8 +1,8 @@
 version = 0.1
 [default.deploy.parameters]
-stack_name = "my-votingapp"
+stack_name = "voting-app"
 resolve_s3 = true
-s3_prefix = "my-votingapp"
+s3_prefix = "voting-app"
 region = "us-west-2"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
